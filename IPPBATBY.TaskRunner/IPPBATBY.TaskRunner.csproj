@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}</ProjectGuid>
+    <ProjectGuid>{2914F8E9-38FA-4FEA-B3CB-761C1A41D527}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IPPBATBY.Twitter</RootNamespace>
-    <AssemblyName>IPPBATBY.Twitter</AssemblyName>
+    <RootNamespace>IPPBATBY.TaskRunner</RootNamespace>
+    <AssemblyName>IPPBATBY.TaskRunner</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Hammock.ClientProfile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
@@ -41,7 +44,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,25 +54,24 @@
       <HintPath>..\packages\TweetMoaSharp.4.0.0\lib\4.5\TweetSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Twitterizer.Data">
-      <HintPath>..\Dependencies\Twitterizer.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Twitterizer2">
-      <HintPath>..\Dependencies\Twitterizer2.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IPPBATBY.Service\IPPBATBY.Service.csproj">
+    <ProjectReference Include="..\IPPBATBY.Service\IPPBATBY.YahooFinance.Service.csproj">
       <Project>{bbc2a55f-eba2-41c0-a013-98f2e5aaa112}</Project>
-      <Name>IPPBATBY.Service</Name>
+      <Name>IPPBATBY.YahooFinance.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPPBATBY.Twitter\IPPBATBY.Twitter.Service.csproj">
+      <Project>{0d5bf3dd-c584-4735-908f-e2de8702f7f5}</Project>
+      <Name>IPPBATBY.Twitter.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

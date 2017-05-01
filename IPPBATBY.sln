@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.Service", "IPPBATBY.Service\IPPBATBY.Service.csproj", "{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.YahooFinance.Service", "IPPBATBY.Service\IPPBATBY.YahooFinance.Service.csproj", "{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.Twitter", "IPPBATBY.Twitter\IPPBATBY.Twitter.csproj", "{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.Twitter.Service", "IPPBATBY.Twitter\IPPBATBY.Twitter.Service.csproj", "{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.Twitter.Service.Test", "IPPBATBY.Twitter.Service.Test\IPPBATBY.Twitter.Service.Test.csproj", "{250E94BE-06CC-4332-9CDF-0D1D4CDEDC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.TaskRunner", "IPPBATBY.TaskRunner\IPPBATBY.TaskRunner.csproj", "{2914F8E9-38FA-4FEA-B3CB-761C1A41D527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPPBATBY.YahooFinance.Service.Test", "IPPBATBY.YahooFinanace.Service.Test\IPPBATBY.YahooFinance.Service.Test.csproj", "{4698555F-9D28-4960-93CA-977887AE1DEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,12 +21,24 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC2A55F-EBA2-41C0-A013-98F2E5AAA112}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5BF3DD-C584-4735-908F-E2DE8702F7F5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{250E94BE-06CC-4332-9CDF-0D1D4CDEDC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250E94BE-06CC-4332-9CDF-0D1D4CDEDC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250E94BE-06CC-4332-9CDF-0D1D4CDEDC99}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{250E94BE-06CC-4332-9CDF-0D1D4CDEDC99}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2914F8E9-38FA-4FEA-B3CB-761C1A41D527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2914F8E9-38FA-4FEA-B3CB-761C1A41D527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2914F8E9-38FA-4FEA-B3CB-761C1A41D527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2914F8E9-38FA-4FEA-B3CB-761C1A41D527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4698555F-9D28-4960-93CA-977887AE1DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4698555F-9D28-4960-93CA-977887AE1DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4698555F-9D28-4960-93CA-977887AE1DEF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4698555F-9D28-4960-93CA-977887AE1DEF}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

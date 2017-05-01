@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Newtonsoft.Json;
 
-namespace IPPBATBY.Service
+namespace IPPBATBY.YahooFinance.Service.Models
 {
     public class QuoteSummaryData
     {

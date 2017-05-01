@@ -15,28 +15,7 @@ namespace IPPBATBY.Service
         static void Main(string[] args)
         {
 
-            IPPBATBYDataService dataService = new IPPBATBYDataService();
-            
-
-            /*
-            long currentAssets = Convert.ToInt64(DeserializeFinancial());
-            decimal currentPrice = Convert.ToDecimal(DeserializeQuoteSummary());
-
-
-            string status = String.Format("{0} {1:C0}. {2} {3:C}", "Total Assets: ", currentAssets, "Current Price: ", currentPrice);
-
-            Console.WriteLine(status);
-
-            if (currentPrice < 10000000000)
-            {
-                Console.WriteLine("NO!");
-            }
-            */
         }
-
-
-        
-
 
     }
 }
