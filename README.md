@@ -2,6 +2,6 @@
 
 Personal project for personal tracking...
 
-Implementation of Twitter API and Yahoo Finance Web API end point
+Implementation of Twitter API and Yahoo Finance Web API end point.
 
 https://twitter.com/ippbatby
